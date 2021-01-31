@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -2, y: -2, z: 0}
+    - position: {x: -2, y: -1.9999998, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: -2, y: 2, z: 0}
+    - position: {x: -2, y: 2.0000002, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -256,7 +256,16 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 2, y: 2, z: 0}
+    - position: {x: -0.06787181, y: 3.0777006, z: 0}
+      leftTangent: {x: -0.73738074, y: -0.01045702, z: 0}
+      rightTangent: {x: 0.7772057, y: 0.01102179, z: -0}
+      mode: 1
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+    - position: {x: 1.9999999, y: 2.0000002, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -265,10 +274,19 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 2, y: -2, z: 0}
+    - position: {x: 1.9999999, y: -1.9999998, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+    - position: {x: -0.06046533, y: 0.4520952, z: 0}
+      leftTangent: {x: 1.0675017, y: 0.015809556, z: -0}
+      rightTangent: {x: -1.042029, y: -0.01543231, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -334,8 +352,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 0, y: -0.00000023841858, z: 0}
-    m_Extent: {x: 2.0000002, y: 2, z: 0}
+    m_Center: {x: -0.00000023841858, y: 0.53885055, z: 0}
+    m_Extent: {x: 2, y: 2.5388503, z: 0}
 --- !u!4 &1011286370
 Transform:
   m_ObjectHideFlags: 0
@@ -350,8 +368,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1011286371
-BoxCollider2D:
+--- !u!68 &1011286371
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -363,19 +381,43 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.00000023841858}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.0000005, y: 4}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -2, y: -1.9999998}
+  - {x: -2, y: 2.0000002}
+  - {x: -1.5322566, y: 2.3763394}
+  - {x: -1.0665294, y: 2.6938329}
+  - {x: -0.72401905, y: 2.8841653}
+  - {x: -0.38330087, y: 3.0221906}
+  - {x: -0.06787181, y: 3.0777006}
+  - {x: 0.2661186, y: 3.0286436}
+  - {x: 0.6292194, y: 2.8934062}
+  - {x: 0.99577194, y: 2.7031116}
+  - {x: 1.4959444, y: 2.382525}
+  - {x: 1.9999999, y: 2.0000002}
+  - {x: 1.9999999, y: -1.9999998}
+  - {x: 1.805584, y: -1.5674112}
+  - {x: 1.5821567, y: -1.1323093}
+  - {x: 1.2919995, y: -0.6452334}
+  - {x: 1.125979, y: -0.40421233}
+  - {x: 0.9481744, y: -0.17660655}
+  - {x: 0.76021844, y: 0.02878122}
+  - {x: 0.56374365, y: 0.20314826}
+  - {x: 0.3603829, y: 0.33769146}
+  - {x: 0.15176903, y: 0.4236081}
+  - {x: -0.06046533, y: 0.4520952}
+  - {x: -0.26672107, y: 0.4181651}
+  - {x: -0.46778423, y: 0.328305}
+  - {x: -0.662316, y: 0.19115134}
+  - {x: -0.8489783, y: 0.015340269}
+  - {x: -1.0264316, y: -0.19049199}
+  - {x: -1.1933382, y: -0.417709}
+  - {x: -1.490155, y: -0.9017527}
+  - {x: -1.7287197, y: -1.367701}
+  - {x: -1.953918, y: -1.8815594}
+  - {x: -1.9882563, y: -1.9689504}
+  - {x: -2, y: -1.9999998}
 --- !u!1 &1763995177
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +431,7 @@ GameObject:
   - component: {fileID: 1763995180}
   - component: {fileID: 1763995179}
   - component: {fileID: 1763995178}
+  - component: {fileID: 1763995183}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -570,3 +613,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1763995183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763995177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30647e44135bcd74a96bc86c26650c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  jumpSpeed: 1
+  cam: {fileID: 519420032}
+  isGrounded: 0
