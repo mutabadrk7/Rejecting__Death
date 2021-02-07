@@ -1,8 +1,29 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+guid: e809ad84d74e29f4baf51bdc30d3ce73
+=======
+<<<<<<< Updated upstream:Rejecting Death/Assets/Scripts/Materials.meta
+guid: 43582fa1f3696fd44b302e4e5042575f
+=======
 guid: b5bcf70ff41c0234a907f48e7542e907
+>>>>>>> Stashed changes:Rejecting Death/Assets/Scripts/interactables.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
+=======
+<<<<<<< Updated upstream:Rejecting Death/Assets/Scripts/Materials/New Piskel (2).mat.meta
+guid: fc21126ad0bc5304fa792ca6f912e2b6
+NativeFormatImporter:
+=======
+guid: b5bcf70ff41c0234a907f48e7542e907
+folderAsset: yes
+DefaultImporter:
+>>>>>>> Stashed changes:Rejecting Death/Assets/Scripts/interactables.meta
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> Stashed changes
   userData: 
   assetBundleName: 
   assetBundleVariant: 
