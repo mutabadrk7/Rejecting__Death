@@ -20,8 +20,7 @@ public class crumblefloor : MonoBehaviour
     // Update is called once per frame
      void Update()
     {
-        //if(GetComponent<EdgeCollider2D>().isTrigger = true)
-           
+        
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -30,25 +29,38 @@ public class crumblefloor : MonoBehaviour
         if (col.collider.CompareTag("Player"))
         {
             StartCoroutine(Fall());
+            
         }    
     }
-
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (GetComponent<EdgeCollider2D>().isTrigger == true )
+        { 
+            
+        }
+    }
     IEnumerator Fall()
     {
         yield return new WaitForSeconds(fallDelay);
         rb2d.isKinematic = false;
         GetComponent<EdgeCollider2D>().isTrigger = true;
-        
+       //yield return new WaitForSeconds(respawnDelay);
+        //StartCoroutine(Respawn());
         yield return 0;
+
+
+
     }
     IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(respawnDelay);
-        StartCoroutine(Respawn());
-        rb2d.isKinematic = false;
-        transform.position = startPos;
+        
+        
+        rb2d.isKinematic = true;
         
         GetComponent<EdgeCollider2D>().isTrigger = false;
+        transform.position = startPos;
+        
+        
         yield return 0;
     }
 }
