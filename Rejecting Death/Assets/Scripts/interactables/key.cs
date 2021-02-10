@@ -13,7 +13,7 @@ public class key : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        isFollowing = false;
     }
 
     // Update is called once per frame
@@ -27,13 +27,16 @@ public class key : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            if (isFollowing)
+           
+            if (!isFollowing)
             {
-                CharacterController thePlayer = FindObjectOfType<CharacterController>();
+                Movement thePlayer = FindObjectOfType<Movement>();
 
-                folowTarget = thePlayer.transform;
+                folowTarget = thePlayer.keyFollowPoint;
+                thePlayer.followingkey = this;
+                isFollowing = true;
             }
         }
     }
